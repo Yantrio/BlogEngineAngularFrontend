@@ -1,0 +1,17 @@
+<div class="row">
+    <div class="col-sm-10">
+        <h2>{{post.metaData.title}}</h2>
+        <h4>
+            <small class="text-muted">
+                <small class="text-muted" am-time-ago="post.metaData.createdDate" am-preprocess="utc"></small>  • {{post.MetaData.Author}}
+            </small>
+        </h4>
+        <div class="post" ng-bind-html="post.bodyAsHtml">
+        </div>
+    </div>
+    <div class="col-sm-2">
+        <a href="#" class="pull-right">
+            <img src="//placehold.it/100" class="img-circle">
+        </a>
+    </div>
+</div>

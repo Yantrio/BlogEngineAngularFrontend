@@ -1,0 +1,6 @@
+<a ui-sref="post({postname : post.postName})">
+    <h2>{{post.metaData.title}}</h2>
+</a>
+<div class="blog exceprt" ng-bind-html="post.excerptAsHtml"></div>
+<small class="text-muted" am-time-ago="post.metaData.createdDate" am-preprocess="utc"></small>
+<small><a ui-sref="post({postname : post.postname})" class="text-muted">Read More...</a><small>
